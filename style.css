@@ -1,0 +1,74 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  position: relative;
+  outline: none;
+}
+
+html,
+body,
+#main-container {
+  height: 100%;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+body {
+  background: #000;
+  font-family: "myriad-pro", 'Myriad Pro', sans-serif;
+  color: #fff;
+}
+
+h1 {
+    margin: 0 auto;
+    font-weight: normal;
+}
+
+#fungi-menu {
+    list-style: none;
+    display: flex;
+    gap: 4em;
+    justify-content: space-between;
+    width: 80vw;
+    height: 50vh;
+    margin: 0 auto;
+}
+
+#fungi-menu.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.fungi-menu-item {
+    width: 33.3%;
+    height: 100%;
+    z-index: 1;
+    transition: visibility 0s linear 500ms, opacity 500ms;
+}
+
+.fungi-menu-item.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.fungi-menu-item .fungi-menu-image {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+object {
+    z-index: 0;
+}

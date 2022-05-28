@@ -5,8 +5,13 @@ window.addEventListener('DOMContentLoaded', () => {
         li.classList.remove('visible');
     }
 
+    revealFungi = (id) => {
+        document.querySelector(`#fungi-page-${id}`).classList.add('current');
+    }
+
     const handleMenuClick = (e) => {
-        hideMenuItem(e.target.closest('li'));
+        const selectedFungi = e.target.closest('li');
+        hideMenuItem(selectedFungi);
         const remainingFungi = document.querySelectorAll('.fungi-menu-item.visible');
         
         let i = 0;
@@ -20,6 +25,9 @@ window.addEventListener('DOMContentLoaded', () => {
             clearInterval(hideMenuItems);
             hideMenuItems = null;
         }
+        console.log(selectedFungi.dataset);
+        revealFungi(selectedFungi.dataset.id);
+        
        
     }
 

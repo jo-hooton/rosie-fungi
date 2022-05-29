@@ -76,9 +76,9 @@ object {
 .fungi-page {
   visibility: hidden;
   opacity: 0;
-  transform: scale(250%);
+  transform: scale(300%);
   position: absolute;
-  top: 70%;
+  top: 85%;
   left: 70%;
   height: 100%;
   width: 100%;
@@ -86,7 +86,11 @@ object {
   transition: visibility 0s linear 500ms, opacity 500ms;
 }
 
-.fungi-page.current {
+.fungi-page.revealed {
   visibility: visible;
   opacity: 1;
+}
+
+.fungi-page.fruit-only {
+  z-index: 99;
 }

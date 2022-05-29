@@ -153,7 +153,7 @@ function handleMousemove( event ) {
         // gets the viewport edge. As such, we'll calculate the percentage that
         // the user has made it "through the edge" when calculating the delta.
         // Then, that use that percentage to back-off from the "max" step value.
-        var maxStep = 200;
+        var maxStep = 10;
 
 
         // Should we scroll left?
@@ -200,12 +200,8 @@ function handleMousemove( event ) {
             ( nextScrollY !== currentScrollY )
             ) {
 
-            // window.scrollTo( nextScrollX, nextScrollY );
-            window.scrollTo({
-                top: nextScrollY,
-                left: nextScrollX,
-                behavior: 'smooth'
-            });
+            window.scrollTo( nextScrollX, nextScrollY );
+
             return( true );
 
         } else {
@@ -280,3 +276,4 @@ function drawGridLines() {
 
 // document.addEventListener('mousemove', logMovement);
 
+window.scroll((document.documentElement.clientWidth/2),0)

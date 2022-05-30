@@ -259,13 +259,13 @@ function drawGridLines() {
     // document.body.appendChild( edge );
 
     // Add mouse-guard so that nothing is selectable.
-    var guard = document.createElement( "div" );
-    guard.style.position = "fixed";
-    guard.style.top = "0px";
-    guard.style.bottom = "0px";
-    guard.style.left = "0px";
-    guard.style.right = "0px";
-    document.body.appendChild( guard );
+    // var guard = document.createElement( "div" );
+    // guard.style.position = "fixed";
+    // guard.style.top = "0px";
+    // guard.style.bottom = "0px";
+    // guard.style.left = "0px";
+    // guard.style.right = "0px";
+    // document.body.appendChild( guard );
 
 }
 

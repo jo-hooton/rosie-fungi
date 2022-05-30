@@ -83,14 +83,15 @@ object {
   height: 100%;
   width: 100%;
   max-width: 800px;
-  transition: visibility 0s linear 500ms, opacity 500ms;
+  transition: visibility 0s linear, opacity 3000ms ease-in-out;
+}
+
+.fungi-page.fruit-only {
+  z-index: 99;
 }
 
 .fungi-page.revealed {
   visibility: visible;
   opacity: 1;
-}
-
-.fungi-page.fruit-only {
-  z-index: 99;
+  transform: scale(300%);
 }

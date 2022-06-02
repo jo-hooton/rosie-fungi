@@ -200,6 +200,23 @@
             .cls-39 {
                 font-size: 4.85px;
             }
+
+            /* Copy this @keyframes block to your CSS*/
+            @keyframes animate {
+                0.0% {
+                    transform: scale(1);
+                }
+
+                10.3% {
+                    transform-origin: top right;
+                    transform: rotate(10deg) scale(1.1);
+                }
+            }
+
+            /* Add the animation: property to whichever element you want to animate */
+            .animate-strand {
+                animation: animate 3s ease 0s 1 normal none;
+            }
         </style>
     </defs>
     <g class="single-strand" id="Layer_207"><text class="cls-7"

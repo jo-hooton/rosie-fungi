@@ -33,7 +33,10 @@ body {
 
 h1 {
     margin: 0 auto;
-    font-weight: normal;
+}
+
+h1 span {
+  visibility: hidden;
 }
 
 #fungi-menu {
@@ -69,6 +72,18 @@ h1 {
     cursor: pointer;
 }
 
+.fungi-menu-item #fungi-image-1 {
+  width: 80%;
+}
+
+.fungi-menu-item .fungi-image-2 {
+  
+}
+
+.fungi-menu-item .fungi-image-3 {
+  
+}
+
 object {
     z-index: 0;
 }
@@ -78,12 +93,12 @@ object {
   opacity: 0;
   transform: scale(300%);
   position: absolute;
-  top: 85%;
+  top: 90%;
   left: 70%;
   height: 100%;
   width: 100%;
   max-width: 800px;
-  transition: visibility 0s linear, opacity 3000ms ease-in-out;
+  transition: visibility 0s linear, opacity 2000ms ease-in-out;
 }
 
 .fungi-page.fruit-only {

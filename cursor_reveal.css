@@ -1,7 +1,7 @@
 :root {
     cursor: none;
-    --cursorX: 40vw;
-    --cursorY: 40vh;
+    --cursorX: 50vw;
+    --cursorY: 50vh;
   }
   :root:before {
     content: '';

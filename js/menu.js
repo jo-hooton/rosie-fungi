@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
             i++;
             if (i >= remainingFungi.length) {
                 setTimeout(() => {
-                    window.location = (`/fungi/fungi_${selectedFungi.dataset.id}.html`)
+                    window.location = (`/rosie-fungi/fungi/fungi_${selectedFungi.dataset.id}`)
                 }, 300)
                 // stopHidingMenu();
             }

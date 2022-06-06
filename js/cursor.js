@@ -8,4 +8,3 @@
   
 // document.addEventListener('mousemove',update)
 // document.addEventListener('touchmove',update)
-

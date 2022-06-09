@@ -84,6 +84,27 @@ h1 span {
   
 }
 
+.back-to-menu {
+  z-index: 999;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  padding: 1em;
+  text-decoration: none;
+  opacity: .8;
+  transform: scale(.95);
+  transition: all 200ms ease-in-out;
+}
+
+.back-to-menu:hover {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.back-to-menu i {
+  margin-right: .5em;
+}
+
 .fungi-page object {
     z-index: 0;
 }
